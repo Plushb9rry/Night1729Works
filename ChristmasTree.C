@@ -1,50 +1,46 @@
-//Created by NIGHT FURY 5.01.2021 F1U7R2Y9
-
 #include <stdio.h>
-#include <conio.h>
-
-    int main()
-
-    {
-        int r,c;
-        for(r=1;r<=10;r++)
+int main() {
+   int i, space, rows, k = 0;
+   for (i = 1; i <= 5; ++i, k = 0) {
+      for (space = 1; space <= 10- i; ++space) {
+         printf("  ");
+      }
+      while (k != 2 * i - 1) {
+         printf("* ");
+         ++k;
+      }
+      printf("\n");
+   }
+   for (i = 1; i <= 7; ++i, k = 0) {
+      for (space = 1; space <= 10- i; ++space) {
+         printf("  ");
+      }
+      while (k != 2 * i - 1) {
+         printf("* ");
+         ++k;
+      }
+      printf("\n");
+   }
+   for (i = 1; i <= 10; ++i, k = 0) {
+      for (space = 1; space <= 10 - i; ++space) {
+         printf("  ");
+      }
+      while (k != 2 * i - 1) {
+         printf("* ");
+         ++k;
+      }
+      printf("\n");
+   }
+    for(i=1; i<=5; i++)
+    {    for (space = 1; space <= 8; ++space) 
         {
-            for(c=1;c<=r;c++)
+            printf("  ");
+        }
+        for(int j=1; j<=5; j++)
         {
             printf("*");
         }
-            printf("\t\t\n");
-        }
-
-        for(r=1;r<=10;r++)
-        {
-            for(c=1;c<=r;c++)
-        {
-            printf("**");
-        }
-            printf("\t\t\n");
-        }
-
-         for(r=1;r<=10;r++)
-        {
-            for(c=1;c<=r;c++)
-        {
-            printf("***");
-        }
-            printf("\t\t\n");
-        }
-
-        for(r=1;r<=10;r++)
-        {
-            for(c=1;c<=r;c++)
-        {
-            printf("****");
-        }
-            printf("\t\t\n");
-        }
-
-
-
-        
-        return 0;
+        printf("\n");
     }
+   return 0;
+}
