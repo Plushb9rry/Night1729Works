@@ -6,41 +6,34 @@
     int main()
 
     {
-        int r,c;
-        for(r=1;r<=10;r++)
+        int i, space, rows, k = 0;
+        // FOR 1ST TRIANGLE 
+        for (i = 1; i <= 5; ++i, k = 0) 
         {
-            for(c=1;c<=r;c++)
-        {
-            printf("*");
+            for (space = 1; space <= rows - i; ++space) 
+            {
+                printf("  ");
+            } 
+            while (k != 2 * i - 1) 
+            {
+                printf("* ");
+                ++k;
+            }
+            printf("\n");
         }
-            printf("\t\t\n");
-        }
-
-        for(r=1;r<=10;r++)
+        //FOR 2ND TRIANGLE
+         for (i = 1; i <= 7; ++i, k = 0) 
         {
-            for(c=1;c<=r;c++)
-        {
-            printf("**");
-        }
-            printf("\t\t\n");
-        }
-
-         for(r=1;r<=10;r++)
-        {
-            for(c=1;c<=r;c++)
-        {
-            printf("***");
-        }
-            printf("\t\t\n");
-        }
-
-        for(r=1;r<=10;r++)
-        {
-            for(c=1;c<=r;c++)
-        {
-            printf("****");
-        }
-            printf("\t\t\n");
+            for (space = 1; space <= rows - i; ++space) 
+            {
+                printf("  ");
+            } 
+            while (k != 2 * i - 1) 
+            {
+                printf("* ");
+                ++k;
+            }
+            printf("\n");
         }
 
 
